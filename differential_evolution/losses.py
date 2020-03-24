@@ -1,5 +1,7 @@
 import tensorflow as tf
 
+from .ackley import ackley_function
+
 def create_huber(model, input_vals_y):
     def huber(delta=14.0):
         # huber loss
@@ -16,4 +18,11 @@ def create_mse(model, input_vals_y):
     def mse():
         return tf.reduce_mean(tf.square(input_vals_y - model()))
     return mse
+
+def create_ackley(a, b):
+    def ackley():
+        return ackley_function(a.numpy(), b.numpy())
+
+    return ackley
+
 

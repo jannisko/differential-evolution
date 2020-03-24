@@ -1,6 +1,8 @@
 ## Usage
 
 ```python
+import tensorflow as tf
+
 from differential_evolution import DifferentialEvolution
 from differential_evolution.losses import create_huber
 from differential_evolution.models import create_quadratic

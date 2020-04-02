@@ -8,8 +8,8 @@ from matplotlib import animation, cm
 import sys
 
 def animate_models(
-    output_gif=True,
-    output_mp4=False,
+    output_gif=False,
+    output_mp4=True,
     frame_num=300,
     fps=30
 ):
@@ -63,12 +63,13 @@ def animate_models(
 
 
     if(output_gif):
-        anim.save('quadratic_models.gif', fps=fps, writer='imagemagick')
+        anim.save('animations/quadratic_models.gif', fps=fps, writer='imagemagick')
 
     if(output_mp4):
         Writer = animation.writers['ffmpeg']
-        writer = Writer(fps=fps, bitrate=5000)
-        anim.save('surface_rotation.mp4', writer=writer)
+        writer = Writer(fps=fps, bitrate=3000)
+        anim.save('animations/quadratic_models.mp4', writer=writer)
+
 
 
 if __name__ == "__main__":

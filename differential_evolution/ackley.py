@@ -29,13 +29,12 @@ SOFTWARE.
 
 #importing libraries
 import numpy as np
-import math
 
 def ackley_function(x1,x2):
   #returns the point value of the given coordinate
-  part_1 = -0.2*math.sqrt(0.5*(x1*x1 + x2*x2))
-  part_2 = 0.5*(math.cos(2*math.pi*x1) + math.cos(2*math.pi*x2))
-  value = math.exp(1) + 20 -20*math.exp(part_1) - math.exp(part_2)
+  part_1 = -0.2*np.sqrt(0.5*(x1*x1 + x2*x2))
+  part_2 = 0.5*(np.cos(2*np.pi*x1) + np.cos(2*np.pi*x2))
+  value = np.exp(1) + 20 -20*np.exp(part_1) - np.exp(part_2)
   #returning the value
   return value
 

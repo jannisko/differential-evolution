@@ -1,4 +1,5 @@
 ![gif of a quadratic model being optimized](animations/quadratic_models.gif)
+![gif of the ackley loss being optimized](animations/ackley_optimization.gif)
 
 ## Usage
 
@@ -50,7 +51,7 @@ loss = create_huber(logistic_model, y)
 ```create_animation.py``` contains a few examples of how to animate your model or loss function. To output as .mp4 you will need [ffmpeg](https://www.ffmpeg.org/). For .gif you will need [imagemagik](https://imagemagick.org/index.php).
 
 - ```animate_models()``` was used for the 2d animation of a quadratic function.
-- ```animate_loss()``` was used for the 3d animation of the ackley function.
+- ```animate_ackley()``` was used for the 3d animation of the ackley function.
 
 
 ## Troubleshooting

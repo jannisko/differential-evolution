@@ -52,6 +52,19 @@ class DifferentialEvolution():
                 best_point = point
         return best_point, best_loss
 
+    def get_current_population(self):
+        # return all points in a nicely formated list
+        # this wont be nessesary as soon as current_population is made into one big tensor
+        return np.array(
+            [
+                [
+                    val.numpy()[0] for val in point
+                ]
+                for point in self.current_population
+            ]
+        )
+
+
     def next_generation(self):
 
         for j in range(self.count_population):

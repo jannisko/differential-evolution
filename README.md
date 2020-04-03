@@ -1,4 +1,5 @@
 ![gif of a quadratic model being optimized](animations/quadratic_models.gif)
+![gif of ackley function being optimized](animations/ackley_optimization.gif)
 
 ## Usage
 

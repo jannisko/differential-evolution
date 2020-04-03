@@ -35,6 +35,8 @@ point, loss = opt.get_best_point()
 x = np.linspace(0,9,10)
 y = np.linspace(0,9,10)**2
 
+# these are just placeholders
+# the optimizer will choose them at random anyway
 a = tf.Variable(0.0)
 b = tf.Variable(0.0)
 c = tf.Variable(0.0)

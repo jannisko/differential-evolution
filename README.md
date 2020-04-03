@@ -79,3 +79,7 @@ loss = create_huber(logistic_model, y)
 - if you run into the error: \
 ```convert-im6.q16: cache resources exhausted```\
 while creating a .gif you might have to [increase imagemakig's memory limit](https://github.com/ImageMagick/ImageMagick/issues/396)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

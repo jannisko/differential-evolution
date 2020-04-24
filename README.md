@@ -6,6 +6,8 @@ A (very slow) implementation of the [differential evolution](https://en.wikipedi
 ![gif of a quadratic model being optimized](animations/quadratic_models.gif)
 ![gif of the ackley loss being optimized](animations/ackley_optimization.gif)
 
+Higher quality versions of these animations can be found under [Releases](https://github.com/jannisko/differential-evolution/releases).
+
 ## Motivation
 
 I started this project as an assignment for my Tensorflow class. I am sharing this to help anyone with a similar assignment.
